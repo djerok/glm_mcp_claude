@@ -1,0 +1,8 @@
+# never commit secrets or build artifacts
+**/.env
+**/node_modules/
+*.bak
+*.bak-*
+.scratch*
+test-clone/
+usage.jsonl

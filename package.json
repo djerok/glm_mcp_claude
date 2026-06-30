@@ -1,0 +1,48 @@
+{
+  "name": "glm-mcp-claude",
+  "version": "1.1.7",
+  "description": "GLM (Zhipu/Z.ai) as a cheap, full-capability subagent for Claude Code — auto-routing between Opus and GLM, a file-editing agent with diff/dry-run/git-revert oversight, and a one-command installer.",
+  "type": "module",
+  "bin": {
+    "glm-mcp-claude": "install.mjs"
+  },
+  "files": [
+    "glm-mcp/",
+    "agents/",
+    "hooks/",
+    "docs/",
+    "assets/",
+    "install.mjs",
+    "uninstall.mjs",
+    "glm-code.mjs",
+    ".mcp.json.example",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "mcp",
+    "model-context-protocol",
+    "glm",
+    "zhipu",
+    "z.ai",
+    "subagent",
+    "ai-agents",
+    "anthropic",
+    "llm",
+    "cost-optimization"
+  ],
+  "author": "djerok",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djerok/glm_mcp_claude.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djerok/glm_mcp_claude/issues"
+  },
+  "homepage": "https://github.com/djerok/glm_mcp_claude#readme"
+}

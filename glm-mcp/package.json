@@ -1,0 +1,21 @@
+{
+  "name": "glm-mcp",
+  "version": "1.1.7",
+  "description": "MCP server that delegates self-contained subtasks to the GLM (Zhipu/Z.ai) Anthropic-compatible API, so Claude Code can use GLM as a cheap, peak-aware subagent.",
+  "type": "module",
+  "bin": {
+    "glm-mcp": "src/index.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "smoke": "node src/smoke.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

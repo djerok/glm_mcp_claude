@@ -1,0 +1,14 @@
+{
+  "_comment": "OPTIONAL project-scoped registration. The installer registers globally (user scope) instead, which is recommended. Use this only if you want GLM available in just one project: copy to .mcp.json, set the key, and adjust the path to glm-mcp/src/index.js.",
+  "mcpServers": {
+    "glm": {
+      "command": "node",
+      "args": ["./glm-mcp/src/index.js"],
+      "env": {
+        "GLM_API_KEY": "your-zai-key-here",
+        "GLM_BASE_URL": "https://api.z.ai/api/anthropic",
+        "GLM_MAX_CONCURRENT": "1"
+      }
+    }
+  }
+}

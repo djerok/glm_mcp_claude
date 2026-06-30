@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup help & questions
+    url: https://github.com/djerok/glm_mcp_claude#readme
+    about: Read the README (install, tools, configuration, troubleshooting) before opening an issue.

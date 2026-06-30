@@ -1,0 +1,53 @@
+name: Bug report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report! Please don't paste API keys or secrets anywhere below.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, and what went wrong?
+      placeholder: I ran `node install.mjs --key ...` and ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: glm-model
+    attributes:
+      label: Which GLM model / endpoint
+      placeholder: glm-5.2 via https://api.z.ai/api/anthropic
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Node version (`node -v`), Claude Code version (`claude --version`).
+      placeholder: |
+        OS: Windows 11
+        Node: v20.x
+        Claude Code: 2.x
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / output
+      description: Output of `cd ~/.claude/glm-mcp && npm run smoke`, or the error. REDACT any keys.
+      render: shell
